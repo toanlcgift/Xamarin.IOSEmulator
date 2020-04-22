@@ -192,15 +192,22 @@
     <BundleResource Include="Resources\Frameworks\libspice-client-glib-2.0.8.dylib" />
     <BundleResource Include="Resources\Frameworks\libspice-server.1.dylib" />
     <BundleResource Include="Resources\Frameworks\libssl.1.1.dylib" />
+    <BundleResource Include="Settings.bundle\Root.plist" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
-    <Compile Include="AppDelegate.cs" />
+    <Compile Include="MyAppDelegate.cs" />
     <Compile Include="SceneDelegate.cs" />
     <Compile Include="ViewController.cs" />
     <Compile Include="ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
+      <Project>{34A8F9E1-B085-4FC8-A5FA-5B9CF47696FA}</Project>
+      <Name>ClassLibrary1</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
