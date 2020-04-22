@@ -122,7 +122,6 @@
   <ItemGroup>
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
-    <BundleResource Include="Resources\Frameworks\default.metallib" />
     <BundleResource Include="Resources\Frameworks\libcrypto.1.1.dylib" />
     <BundleResource Include="Resources\Frameworks\libffi.6.dylib" />
     <BundleResource Include="Resources\Frameworks\libgcrypt.20.dylib" />
@@ -193,6 +192,75 @@
     <BundleResource Include="Resources\Frameworks\libspice-server.1.dylib" />
     <BundleResource Include="Resources\Frameworks\libssl.1.1.dylib" />
     <BundleResource Include="Settings.bundle\Root.plist" />
+    <BundleResource Include="Resources\qemu\bamboo.dtb" />
+    <BundleResource Include="Resources\qemu\bios-256k.bin" />
+    <BundleResource Include="Resources\qemu\bios-microvm.bin" />
+    <BundleResource Include="Resources\qemu\bios.bin" />
+    <BundleResource Include="Resources\qemu\canyonlands.dtb" />
+    <BundleResource Include="Resources\qemu\edk2-aarch64-code.fd" />
+    <BundleResource Include="Resources\qemu\edk2-arm-code.fd" />
+    <BundleResource Include="Resources\qemu\edk2-arm-vars.fd" />
+    <BundleResource Include="Resources\qemu\edk2-i386-code.fd" />
+    <BundleResource Include="Resources\qemu\edk2-i386-secure-code.fd" />
+    <BundleResource Include="Resources\qemu\edk2-i386-vars.fd" />
+    <BundleResource Include="Resources\qemu\edk2-licenses.txt" />
+    <BundleResource Include="Resources\qemu\edk2-x86_64-code.fd" />
+    <BundleResource Include="Resources\qemu\edk2-x86_64-secure-code.fd" />
+    <BundleResource Include="Resources\qemu\efi-e1000.rom" />
+    <BundleResource Include="Resources\qemu\efi-e1000e.rom" />
+    <BundleResource Include="Resources\qemu\efi-eepro100.rom" />
+    <BundleResource Include="Resources\qemu\efi-ne2k_pci.rom" />
+    <BundleResource Include="Resources\qemu\efi-pcnet.rom" />
+    <BundleResource Include="Resources\qemu\efi-rtl8139.rom" />
+    <BundleResource Include="Resources\qemu\efi-virtio.rom" />
+    <BundleResource Include="Resources\qemu\efi-vmxnet3.rom" />
+    <BundleResource Include="Resources\qemu\hppa-firmware.img" />
+    <BundleResource Include="Resources\qemu\kvmvapic.bin" />
+    <BundleResource Include="Resources\qemu\linuxboot_dma.bin" />
+    <BundleResource Include="Resources\qemu\linuxboot.bin" />
+    <BundleResource Include="Resources\qemu\multiboot.bin" />
+    <BundleResource Include="Resources\qemu\openbios-ppc" />
+    <BundleResource Include="Resources\qemu\openbios-sparc32" />
+    <BundleResource Include="Resources\qemu\openbios-sparc64" />
+    <BundleResource Include="Resources\qemu\opensbi-riscv32-virt-fw_jump.bin" />
+    <BundleResource Include="Resources\qemu\opensbi-riscv64-sifive_u-fw_jump.bin" />
+    <BundleResource Include="Resources\qemu\opensbi-riscv64-virt-fw_jump.bin" />
+    <BundleResource Include="Resources\qemu\palcode-clipper" />
+    <BundleResource Include="Resources\qemu\petalogix-ml605.dtb" />
+    <BundleResource Include="Resources\qemu\petalogix-s3adsp1800.dtb" />
+    <BundleResource Include="Resources\qemu\ppc_rom.bin" />
+    <BundleResource Include="Resources\qemu\pvh.bin" />
+    <BundleResource Include="Resources\qemu\pxe-e1000.rom" />
+    <BundleResource Include="Resources\qemu\pxe-eepro100.rom" />
+    <BundleResource Include="Resources\qemu\pxe-ne2k_pci.rom" />
+    <BundleResource Include="Resources\qemu\pxe-pcnet.rom" />
+    <BundleResource Include="Resources\qemu\pxe-rtl8139.rom" />
+    <BundleResource Include="Resources\qemu\pxe-virtio.rom" />
+    <BundleResource Include="Resources\qemu\qemu_vga.ndrv" />
+    <BundleResource Include="Resources\qemu\qemu-nsis.bmp" />
+    <BundleResource Include="Resources\qemu\QEMU,cgthree.bin" />
+    <BundleResource Include="Resources\qemu\QEMU,tcx.bin" />
+    <BundleResource Include="Resources\qemu\s390-ccw.img" />
+    <BundleResource Include="Resources\qemu\s390-netboot.img" />
+    <BundleResource Include="Resources\qemu\sgabios.bin" />
+    <BundleResource Include="Resources\qemu\skiboot.lid" />
+    <BundleResource Include="Resources\qemu\slof.bin" />
+    <BundleResource Include="Resources\qemu\trace-events-all" />
+    <BundleResource Include="Resources\qemu\u-boot-sam460-20100605.bin" />
+    <BundleResource Include="Resources\qemu\u-boot.e500" />
+    <BundleResource Include="Resources\qemu\vgabios-ati.bin" />
+    <BundleResource Include="Resources\qemu\vgabios-bochs-display.bin" />
+    <BundleResource Include="Resources\qemu\vgabios-cirrus.bin" />
+    <BundleResource Include="Resources\qemu\vgabios-qxl.bin" />
+    <BundleResource Include="Resources\qemu\vgabios-ramfb.bin" />
+    <BundleResource Include="Resources\qemu\vgabios-stdvga.bin" />
+    <BundleResource Include="Resources\qemu\vgabios-virtio.bin" />
+    <BundleResource Include="Resources\qemu\vgabios-vmware.bin" />
+    <BundleResource Include="Resources\qemu\vgabios.bin" />
+    <BundleResource Include="Resources\hterm_all.js" />
+    <BundleResource Include="Resources\terminal.html" />
+    <BundleResource Include="Resources\terminal.js" />
+    <BundleResource Include="Resources\default.metallib" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
@@ -208,6 +276,9 @@
       <Project>{34A8F9E1-B085-4FC8-A5FA-5B9CF47696FA}</Project>
       <Name>ClassLibrary1</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\qemu\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

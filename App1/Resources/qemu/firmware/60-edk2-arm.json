@@ -1,0 +1,31 @@
+{
+    "description": "UEFI firmware for arm",
+    "interface-types": [
+        "uefi"
+    ],
+    "mapping": {
+        "device": "flash",
+        "executable": {
+            "filename": "/Users/runner/runners/2.168.0/work/UTM/UTM/sysroot-arm64/share/qemu/edk2-arm-code.fd",
+            "format": "raw"
+        },
+        "nvram-template": {
+            "filename": "/Users/runner/runners/2.168.0/work/UTM/UTM/sysroot-arm64/share/qemu/edk2-arm-vars.fd",
+            "format": "raw"
+        }
+    },
+    "targets": [
+        {
+            "architecture": "arm",
+            "machines": [
+                "virt-*"
+            ]
+        }
+    ],
+    "features": [
+        "verbose-static"
+    ],
+    "tags": [
+
+    ]
+}
