@@ -21,8 +21,6 @@
 bld/
 [Bb]in/
 [Oo]bj/
-*.aar
-*.a
 MGMX4CocosJS.Android/Assets/
 
 # Visual Studio 2015 cache/options directory
