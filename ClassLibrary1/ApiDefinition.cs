@@ -9,5 +9,11 @@ namespace NativeLibrary
     [BaseType(typeof(NSObject))]    interface AppDelegate : IUIApplicationDelegate    {
 
     }
+
+    [BaseType(typeof(NSObject))]
+    interface VMListViewController : UICollectionViewController
+    {
+
+    }
 }
 
