@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CE550BC8225947990063E575"
-               BuildableName = "libUTM.a"
+               BuildableName = "UTM.app"
                BlueprintName = "UTM"
                ReferencedContainer = "container:UTM.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CE550BC8225947990063E575"
-            BuildableName = "libUTM.a"
+            BuildableName = "UTM.app"
             BlueprintName = "UTM"
             ReferencedContainer = "container:UTM.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CE550BC8225947990063E575"
-            BuildableName = "libUTM.a"
+            BuildableName = "UTM.app"
             BlueprintName = "UTM"
             ReferencedContainer = "container:UTM.xcodeproj">
          </BuildableReference>

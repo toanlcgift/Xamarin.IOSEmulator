@@ -10,10 +10,9 @@ namespace NativeLibrary
 
     }
 
-    [BaseType(typeof(NSObject))]
-    interface VMListViewController : UICollectionViewController
+    [BaseType(typeof(UIViewController))]
+    interface VMDisplayViewController
     {
-
     }
 }
 

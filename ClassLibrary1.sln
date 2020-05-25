@@ -34,6 +34,7 @@ Global
 		{E433672E-9FB4-4A66-9AD7-C94E555AEB03}.Debug|Any CPU.ActiveCfg = Debug|iPhone
 		{E433672E-9FB4-4A66-9AD7-C94E555AEB03}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{E433672E-9FB4-4A66-9AD7-C94E555AEB03}.Debug|iPhone.Build.0 = Debug|iPhone
+		{E433672E-9FB4-4A66-9AD7-C94E555AEB03}.Debug|iPhone.Deploy.0 = Debug|iPhone
 		{E433672E-9FB4-4A66-9AD7-C94E555AEB03}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
 		{E433672E-9FB4-4A66-9AD7-C94E555AEB03}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
 		{E433672E-9FB4-4A66-9AD7-C94E555AEB03}.Release|Any CPU.ActiveCfg = Release|iPhone
