@@ -14,5 +14,11 @@ namespace NativeLibrary
     interface VMDisplayViewController
     {
     }
+
+    [BaseType(typeof(UICollectionViewController))]
+    interface VMListViewController : IUICollectionViewDragDelegate, IUICollectionViewDropDelegate
+    {
+
+    }
 }
 
