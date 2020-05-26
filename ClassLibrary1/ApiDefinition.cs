@@ -25,10 +25,10 @@ namespace NativeLibrary
 
     [BaseType(typeof(NSObject))]
     interface UTMQemuManagerDelegate
-    { 
+    {
     }
 
-        [BaseType(typeof(NSObject))]
+    [BaseType(typeof(NSObject))]
     interface UTMVirtualMachine : UTMQemuManagerDelegate
     {
     }
@@ -130,6 +130,75 @@ namespace NativeLibrary
         [Export("hideToolbarButton:")]
         void HideToolbarButton(UIButton sender);
     }
+
+    [BaseType(typeof(UITableViewController))]
+    interface VMConfigViewController
+    {
+    }
+
+    // @interface VMConfigExistingViewController : VMConfigViewController
+    [BaseType(typeof(VMConfigViewController))]
+    interface VMConfigExistingViewController
+    {
+        // @property (nonatomic, weak) UITextField * _Nullable nameField __attribute__((iboutlet));
+        [NullAllowed, Export("nameField", ArgumentSemantic.Weak)]
+        UITextField NameField { get; set; }
+
+        // @property (assign, nonatomic) BOOL nameReadOnly;
+        [Export("nameReadOnly")]
+        bool NameReadOnly { get; set; }
+
+        // @property (nonatomic, weak) UITableViewCell * _Nullable exportLogCell __attribute__((iboutlet));
+        [NullAllowed, Export("exportLogCell", ArgumentSemantic.Weak)]
+        UITableViewCell ExportLogCell { get; set; }
+
+        // @property (nonatomic, weak) UIBarButtonItem * _Nullable saveButton __attribute__((iboutlet));
+        [NullAllowed, Export("saveButton", ArgumentSemantic.Weak)]
+        UIBarButtonItem SaveButton { get; set; }
+
+        // @property (nonatomic, weak) UITableViewCell * _Nullable versionCell __attribute__((iboutlet));
+        [NullAllowed, Export("versionCell", ArgumentSemantic.Weak)]
+        UITableViewCell VersionCell { get; set; }
+
+        // -(void)cancelPressed:(id _Nonnull)sender __attribute__((ibaction));
+        [Export("cancelPressed:")]
+        void CancelPressed(NSObject sender);
+    }
+
+    [BaseType(typeof(VMConfigViewController))]
+    interface VMConfigSystemViewController
+    {
+    }
+
+    // @interface VMConfigCreateViewController : VMConfigSystemViewController
+    [BaseType(typeof(VMConfigSystemViewController))]
+    interface VMConfigCreateViewController
+    {
+        // @property (nonatomic, weak) UITextField * _Nullable nameField __attribute__((iboutlet));
+        [NullAllowed, Export("nameField", ArgumentSemantic.Weak)]
+        UITextField NameField { get; set; }
+
+        // @property (assign, nonatomic) BOOL advancedConfiguration;
+        [Export("advancedConfiguration")]
+        bool AdvancedConfiguration { get; set; }
+
+        // @property (nonatomic, weak) UITableViewCell * _Nullable advancedConfigurationCell __attribute__((iboutlet));
+        [NullAllowed, Export("advancedConfigurationCell", ArgumentSemantic.Weak)]
+        UITableViewCell AdvancedConfigurationCell { get; set; }
+
+        // @property (nonatomic, weak) UIBarButtonItem * _Nullable saveButton __attribute__((iboutlet));
+        [NullAllowed, Export("saveButton", ArgumentSemantic.Weak)]
+        UIBarButtonItem SaveButton { get; set; }
+
+        // -(void)savePressed:(UIBarButtonItem * _Nonnull)sender __attribute__((ibaction));
+        [Export("savePressed:")]
+        void SavePressed(UIBarButtonItem sender);
+
+        // -(void)cancelPressed:(UIBarButtonItem * _Nonnull)sender __attribute__((ibaction));
+        [Export("cancelPressed:")]
+        void CancelPressed(UIBarButtonItem sender);
+    }
+
 
 }
 
